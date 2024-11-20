@@ -1,0 +1,6 @@
+{
+  "name": "@macros/scss",
+  "version": "1.0.0",
+  "description": "A collection of scss utilities and components for macros",
+  "sideEffects": false
+}

@@ -1,0 +1,7 @@
+@use '@macros/scss/global' as M;
+
+.login__page--border-none {
+  .mat-mdc-form-field-flex {
+    border-right: none;
+  }
+}

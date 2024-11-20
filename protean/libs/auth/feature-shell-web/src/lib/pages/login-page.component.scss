@@ -1,0 +1,12 @@
+@use "@macros/scss/global.scss" as m;
+
+.macros-login-container {
+  &__wrapper {
+    height: 100vh;
+    min-height:30vh;
+
+    &--shadow {
+      box-shadow: 1rem 1rem 8px 8px #000000;
+    }
+  }
+}

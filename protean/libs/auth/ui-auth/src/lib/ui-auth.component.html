@@ -1,0 +1,22 @@
+  <form [formGroup]="loginForm()!">
+    <div class="flex flex-col gap-2 mt-4">
+      <mat-form-field appearance="outline" class="login__page--border-none">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="Email" required/>
+        @if(loginForm()!.get('Email')?.hasError( 'email')) {
+          <mat-error>Please provide a valid email address</mat-error>
+        } @else if (loginForm()!.get('Email')?.hasError('required')) {
+          <mat-error>Please provide an email address</mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="login__page--border-none">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput formControlName="Password" required/>
+        @if (loginForm()!.get('Password')?.hasError('required')) {
+          <mat-error>Please provide a password</mat-error>
+        }
+      </mat-form-field>
+
+    </div>
+  </form>
+

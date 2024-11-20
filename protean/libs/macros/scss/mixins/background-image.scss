@@ -1,0 +1,6 @@
+
+@mixin backgroundImage($background) {
+  background: $background;
+  background-size: cover;
+  margin: 0;
+}

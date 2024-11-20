@@ -1,0 +1,20 @@
+{
+  "name": "macros-default-layout",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/macros/layouts/src",
+  "prefix": "macros",
+  "projectType": "library",
+  "tags": ["ui", "scope: marcos"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/macros/layouts/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

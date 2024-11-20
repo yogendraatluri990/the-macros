@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@protean/auth/data-access-auth": [
+        "libs/auth/data-access-auth/src/index.ts"
+      ],
+      "@protean/auth/feature-shell-web": [
+        "libs/auth/feature-shell-web/src/index.ts"
+      ],
+      "@protean/default-layout": ["libs/macros/layouts/src/index.ts"],
+      "@protean/default-menu": ["libs/macros/menus/src/index.ts"],
+      "@protean/auth/types": ["libs/auth/types/src/index.ts"],
+      "@protean/auth/ui-auth": ["libs/auth/ui-auth/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
